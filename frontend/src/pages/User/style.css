@@ -1,0 +1,50 @@
+#no-reviews {
+    font-style: italic;
+}
+
+main {
+    min-height: 74vh;
+}
+
+#past-reviews {
+    margin-bottom: 2vh;
+}
+
+#host-reviews #floatingTextarea {
+    resize: none;
+}
+
+#floatingTextarea::placeholder {
+    font-size: 1rem;
+}
+
+/* Styling for star rating from https://codepen.io/jennych/pen/yLYeMQm */
+
+.star-rating {
+    display: inline-flex;
+    direction: rtl !important;
+}
+
+.star-rating label {
+    color: #E1E6F6;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 1rem;
+    transition: color 0.5s;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label  {
+  color: orange;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label  {
+    color: orange;
+}

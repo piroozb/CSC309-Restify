@@ -1,0 +1,198 @@
+.reservations {
+    font-family: 'Times New Roman';
+    background-color: #efefe7;
+  }
+  
+  /* #header-wrapper  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .header-elements {
+    padding: 0rem 4vw;
+  }
+  
+  .search-bar {
+    padding-left: 5vw;
+    padding-right: 1vw;
+  }
+  
+  .bar {
+    width:50vw;
+    background:white;
+    box-shadow:0 0 8px rgb(240, 236, 236);
+    height:8vh;
+    border-radius:30px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:0.6rem;
+    font-weight: 400;
+  }
+  
+  .bar-dropdown div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+    
+  .bar div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 70%;
+    border-radius: 20vw;
+    padding:1.5rem 0.8rem;
+  }
+  
+  .bar #navbarSupportedContent {
+    flex-grow: 0;
+  }
+  
+  .bar .location:hover, .bar .check-in:hover, .bar .check-out:hover, .bar .guests:hover{
+    background:rgb(240, 236, 236);
+  }
+    
+  .location{
+    width: 35%;
+  }
+  
+  .check-in, .check-out, .guests{
+    width: 25%;
+  }
+  
+  .location input[type="text"] {
+    background: none;
+    border: none;
+  }
+  
+  .guests input[type="text"] {
+    background: none;
+    border: none;
+  }
+  
+  .check-in input[type="text"] {
+    background: none;
+    border: none;
+  }
+  
+  .check-out input[type="text"] {
+    background: none;
+    border: none;
+  }
+  
+  .search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-btn #search-icon {
+    transform: scale(4, 4);
+    color: black;
+  }
+  
+  input[type="text"] {
+    background: none;
+  }
+  
+  input[type="text"]:focus{
+    outline:none;
+  }
+  
+  ::placeholder{
+    font-size:0.6rem;
+  }
+  
+  .guests{
+    position: relative;  
+  }
+  .search-btn span{
+    top: 50%;
+    right: 10px;
+    color:white;
+    font-size:0.8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  } */
+  
+  .bar>div{
+    position:relative;
+  }
+  
+  
+  .bar>div::before{
+    position:absolute;
+    content:"";
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:1px;
+    height:55%;
+    background:hsl(0 0% 90%);
+  }
+  
+  .bar>div:nth-of-type(1)::before{
+      background:transparent;
+  }
+  
+  .bar>div:hover::before{
+    background:transparent;
+  }
+  
+  /* nav, footer {
+    background-color: #411B21
+  } */
+  
+  .users {
+    color: black;
+  }
+  
+  form input::placeholder {
+    font-size: medium;
+  }
+  
+  /* #login-image{
+    min-width: 100%;
+  }
+  
+  #property, #property2, #property3, 
+  #property4, #property5, #property6, 
+  #property7, #property8 {
+    border-radius: 15px;
+    box-shadow: 0 0 2px grey;
+  } */
+  
+  .carousel {
+    border-radius: 15px;
+    padding-top: 0.5vw;
+    padding-left: 0.5vw;
+    max-width: 98%;
+  }
+  
+  /* .dropdown-menu .navbarCustomMenu {
+    background-color: #411B21;
+  } */
+  
+  /* #navbarSupportedContent {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+    width: 40vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 5vh;
+    margin-left: -1px;
+    margin-bottom: -20px;
+  } */
