@@ -70,7 +70,6 @@ const Property = () => {
         }}
 
     const handleReserve = async (event) => {
-        event.preventDefault();
         console.log(checkIn, checkOut, numGuests, approveIn, property.id)
         if (typeof(checkIn) === undefined) {
             setCheckIn(property.available_start)
@@ -92,7 +91,7 @@ const Property = () => {
             console.log(error)
         }
     }
-
+    
     return <div style={{paddingTop: "18vh", paddingBottom: "10vh"}}>
                 {isLoading ? <></>
                 : <Container className="p-5 px-lg-5 mt-5" style={{background: "white", borderRadius: "15px"}}>
@@ -186,7 +185,7 @@ const Property = () => {
 
                                 <div className="d-flex justify-content-center pb-4">
                                     <label htmlFor="guests" className="pe-3 pt-1">Approve In (days):</label>
-                                    <input className="rounded p-2 w-100" id="approve-in" name="approve-in" type='num' onChange={handleRender} required/>
+                                    <input className="rounded p-2 w-100" id="approve-in" name="approve-in" type='num' required/>
                                 </div>
 
                                 <div className="d-flex justify-content-center pb-1">
